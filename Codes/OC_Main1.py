@@ -77,14 +77,14 @@ while True:
     expdate4 = main_sheet.range("B5").raw_value
 
     exp1 = explist("BANKNIFTY")
-    # exp2 = explist("NIFTY")
-    # exp3 = explist("FINNIFTY")
-    # exp4 = explist("MIDCPNIFTY")
+    exp2 = explist("NIFTY")
+    exp3 = explist("FINNIFTY")
+    exp4 = explist("MIDCPNIFTY")
 
-    exp_sheet.range("A2").options(transpose=True).value = exp1
-    # exp_sheet.range("B2").options(transpose=True).value = exp2
-    # exp_sheet.range("C2").options(transpose=True).value = exp3Ṣ
-    # exp_sheet.range("D2").options(transpose=True).value = exp4
+    # exp_sheet.range("A2").options(transpose=True).value = exp1
+    # # exp_sheet.range("B2").options(transpose=True).value = exp2
+    # # exp_sheet.range("C2").options(transpose=True).value = exp3Ṣ
+    # # exp_sheet.range("D2").options(transpose=True).value = exp4
 
 
     data1 = oc("BANKNIFTY",expdate1.strftime("%d%#b%Y"))
